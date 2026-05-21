@@ -61,3 +61,23 @@ Successfully launched:
 * Windows Virtual Machine
   using AWS EC2 service.
 
+## Screenshots
+
+### EC2 Dashboard - Instance
+Shows both Linux and Windows instances in running state.
+
+### Linux Instance Configuration
+Shows Amazon Linux AMI selection and instance settings.
+
+### Windows Instance Configuration
+Shows Windows Server AMI selection and network configuration.
+
+## Learning Outcome
+
+- Learned how to launch EC2 virtual machines in AWS.
+- Understood the difference between Linux and Windows instances.
+- Learned basic cloud instance configuration and networking settings.
+- Gained hands-on experience with AWS EC2 services.
+
+## Note
+Instances were stopped after the experiment to avoid unnecessary AWS usage charges.
