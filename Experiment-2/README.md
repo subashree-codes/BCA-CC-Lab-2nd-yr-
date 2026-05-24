@@ -33,18 +33,21 @@ RDS automatically handles:
    - Aurora and RDS
    - RDS Dashboard
 
-3. Click **Create Database**.
-
-4. Select:
-   - Standard Create
+3. Select:
+   - Create with Full Configuration
+   - Click Create.
+  
+4. Under Database Creation Method, select:
+   - Easy Create
    - Engine Type → MySQL
 
 5. Choose Template:
    - Free Tier
 
 6. Configure DB Instance:
-   - DB instance identifier
-   - Master username
+   - DB instance identifier (name of your DB)
+   - Master username (eg: admin)
+   - Credentials management - Self Managed
    - Create a custom password
 
 7. DB Instance Settings:
