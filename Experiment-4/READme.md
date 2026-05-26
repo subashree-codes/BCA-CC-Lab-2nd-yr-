@@ -65,7 +65,7 @@ Advantages:
 12. Observe the upload process.
 
 13. Use the accelerated endpoint provided by AWS:
-   - bucketname.s3-accelerate.amazonaws.com
+    - bucketname.s3-accelerate.amazonaws.com
 
 14. Upload files using Transfer Acceleration.
 
