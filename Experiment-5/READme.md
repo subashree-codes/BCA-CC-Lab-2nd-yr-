@@ -93,14 +93,17 @@ Successfully transferred data across AWS regions using Amazon S3 Cross-Region Re
 ### Source and Destination Bucket Creation
 Shows creation of the source bucket in Mumbai region and destination bucket in US region.
 
-### Bucket Versioning
-Shows versioning enabled for both S3 buckets.
-
 ### Replication Rule Configuration
 Shows Cross-Region Replication rule configuration.
 
 ### IAM Role Creation
 Shows AWS IAM role automatically created for replication.
+
+### KMS Key Creation
+Shows AWS KMS key created during replication configuration.
+
+### Replication Rule Created
+Shows successful creation of the S3 Cross-Region Replication rule.
 
 ### File Upload in Source Bucket
 Shows file uploaded into the source bucket.
@@ -117,4 +120,4 @@ Shows replicated file successfully appearing in the destination bucket.
 
 ## Cleanup
 
-Replication rules, uploaded files, and S3 buckets were removed after completing the experiment to avoid unnecessary AWS usage charges.
+Replication rules, uploaded files, and S3 buckets were removed and deleted after completing the experiment to avoid unnecessary AWS usage charges.
