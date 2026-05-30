@@ -50,3 +50,74 @@ User → Internet → EC2 Public IP → Apache Web Server → HTML Page
 
    ```bash
    sudo yum update -y
+   ```
+
+9. Install Apache Web Server:
+
+   ```bash
+   sudo yum install httpd -y
+   ```
+
+10. Start Apache service:
+
+    ```bash
+    sudo systemctl start httpd
+    ```
+
+11. Enable Apache service:
+
+    ```bash
+    sudo systemctl enable httpd
+    ```
+
+12. Verify Apache status:
+
+    ```bash
+    sudo systemctl status httpd
+    ```
+   
+13. Navigate to:  
+     cd /var/www/html
+
+14. Create and save the HTML file.
+
+15. Copy the EC2 public IPv4 address.
+    
+16. Open the public IP address in a browser.
+    
+## Result
+
+Successfully hosted a static website on an Amazon EC2 instance using Apache Web Server.
+
+## Screenshots    
+
+### Security Group Configuration
+Shows SSH and HTTP ports enabled in the security group.
+
+### EC2 Instance Running
+Shows the EC2 instance in running state.
+
+### Apache Terminal Access
+Shows successful connection to the EC2 instance terminal.
+
+### Apache Installation Commands - Part 1
+Shows commands used to update the system and install Apache Web Server.
+
+### Apache Installation Commands - Part 2
+Shows commands used to start, enable, and verify the Apache service.
+
+### HTML Webpage Source Code
+Shows the HTML code created inside index.html for hosting the webpage on the EC2 instance.
+
+### Hosted Website Output
+Shows the static website hosted on the EC2 instance and accessed through the public IP address.
+
+## Learning Outcome
+  - Learned how to launch and configure an EC2 instance.
+  - Understood Apache Web Server installation and management.
+  - Learned how to host a static website on EC2.
+  - Gained hands-on experience with cloud-based web hosting.
+
+## Cleanup
+
+The EC2 instance was stopped and terminated after completing the experiment to avoid unnecessary AWS usage charges.
