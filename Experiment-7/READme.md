@@ -100,3 +100,12 @@ Successfully created a custom Amazon Machine Image (AMI) containing an Apache We
 ## Screenshots
 
 
+## Learning Outcome
+- Learned how to create a custom Amazon Machine Image.
+- Understood the purpose and benefits of AMIs.
+- Learned how to launch EC2 instances from custom AMIs.
+- Gained hands-on experience in server image management and deployment.
+
+## Cleanup
+
+The EC2 instances and custom AMI were removed after completing the experiment to avoid unnecessary AWS usage charges.
