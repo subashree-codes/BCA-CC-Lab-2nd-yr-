@@ -7,7 +7,7 @@ To allocate and associate a new Elastic IP address to an EC2 instance using the 
 ## Requirements
 
 - AWS Account
-- Running EC2 Instance
+- **Running** EC2 Instance
 - Internet Browser
 
 ## Services Used
