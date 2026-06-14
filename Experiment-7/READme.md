@@ -121,6 +121,32 @@ Successfully created a custom Amazon Machine Image (AMI) containing an Apache We
 
 ## Screenshots
 
+### EC2 Instance Running
+Shows the EC2 instance in the running state.
+
+### Apache Installation and Website Setup
+Shows Apache installation and website configuration on the EC2 instance.
+
+### Hosted Website Output
+Shows the website hosted on the original EC2 instance.
+
+### Create Image (AMI) Configuration
+Shows the AMI creation page and image configuration details.
+
+### AMI Creation Progress
+Shows the custom AMI being created.
+
+### AMI Available Status
+Shows the custom AMI successfully created and available for use.
+
+### Launch Instance from AMI
+Shows the process of launching a new EC2 instance from the custom AMI.
+
+### New EC2 Instance Running
+Shows the new EC2 instance launched from the custom AMI.
+
+### Website Output from New Instance
+Shows the website successfully running on the new EC2 instance.
 
 ## Learning Outcome
 - Learned how to create a custom Amazon Machine Image.
