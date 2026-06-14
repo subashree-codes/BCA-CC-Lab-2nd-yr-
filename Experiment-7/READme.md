@@ -68,7 +68,7 @@ Creating a custom AMI allows users to quickly launch multiple instances with ide
 
 11. Navigate to the website directory:
 
-    ```
+    ```bash
     cd /var/www/html
     ```
 
@@ -78,8 +78,28 @@ Creating a custom AMI allows users to quickly launch multiple instances with ide
     sudo nano index.html
     ```
 
-13. Save the HTML file.
+   Paste the following HTML code (or any of your choice):
+
+   ```html
+   <html>
+   <head>
+   <title> My Cloud Lab </title>
+   </head>
+   <body>
+   <h1> Welcome to My Cloud Computing Lab </h1>
+   <h2> Apache Server running on AWS EC2 </h2>
+   </body>
+   </html>
+   ```
+
+13. Save the HTML file:
+    - Press CTRL + O
+    - Press Enter
+    - Press CTRL + X 
 14. Verify the website using the EC2 Public IPv4 address.
+    - Copy Public IPv4 address 
+    - Paste in browser. 
+    - Example: http://54.123.xxx.xxx
 15. Create a Custom AMI:
     - Select the EC2 instance
     - Actions
@@ -92,7 +112,9 @@ Creating a custom AMI allows users to quickly launch multiple instances with ide
 17. Click Create Image.
 18. Wait for AMI status to change from Pending to Available.
 19. Launch a new EC2 instance from the custom AMI.
+    - Go to AMIs → Select Apache-WebServer-AMI → Click - Launch Instance from AMI 
 20. Verify the website using the new instance public IP address.
+    - Copy Public IP & open in browser. 
     
 ## Result        
 Successfully created a custom Amazon Machine Image (AMI) containing an Apache Web Server and hosted website, and launched a new EC2 instance using the created AMI.
@@ -108,4 +130,4 @@ Successfully created a custom Amazon Machine Image (AMI) containing an Apache We
 
 ## Cleanup
 
-The EC2 instances and custom AMI were removed after completing the experiment to avoid unnecessary AWS usage charges.
+The EC2 instances were terminated, the custom AMI was deregistered, and associated resources were removed after completing the experiment to avoid unnecessary AWS usage charges.
