@@ -38,6 +38,7 @@ Elastic IPs are commonly used for:
    - Allocate Elastic IP Address
 
 5. Keep default settings.
+   - Ensure that the Elastic IP is created in the same AWS Region as the EC2 instance.
 
 6. Click Allocate.
 
@@ -81,9 +82,6 @@ Shows the newly created Elastic IP address.
 ### Associate Elastic IP Configuration
 Shows the Elastic IP association settings.
 
-### Instance Selection
-Shows the EC2 instance selected for Elastic IP association.
-
 ### Elastic IP Associated Successfully
 Shows successful association of the Elastic IP with the EC2 instance.
 
@@ -100,4 +98,4 @@ Shows the Elastic IP attached to the EC2 instance as its public IPv4 address.
 
 ## Cleanup
 
-The Elastic IP address was released and EC2 resources were removed after completing the experiment to avoid unnecessary AWS usage charges.
+The Elastic IP address was disassociated and released and EC2 resources were removed after completing the experiment to avoid unnecessary AWS usage charges.
