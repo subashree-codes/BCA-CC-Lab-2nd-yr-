@@ -7,7 +7,7 @@ To create and attach an Amazon Elastic Block Store (EBS) volume and an Amazon El
 ## Requirements
 
 - AWS Account
-- Amazon EC2 Instance
+- Running Amazon EC2 Instance
 - Amazon EBS
 - Amazon EFS
 - Internet Browser
@@ -31,7 +31,7 @@ Amazon Elastic File System (EFS) provides scalable shared file storage that can 
 
 ## Procedure
 
-1. Login to the AWS Console.
+1. Ensure that a running EC2 instance is available.
 
 2. Open the Amazon EC2 Dashboard.
 
