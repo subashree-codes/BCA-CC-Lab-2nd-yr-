@@ -179,3 +179,32 @@ Shows the EFS successfully mounted and accessible.
 ## Cleanup
 
 The EBS volume, EFS file system, and associated AWS resources were removed after completing the experiment to avoid unnecessary AWS usage charges.
+
+## Troubleshooting
+
+During the EFS mounting process, the following command was executed:
+
+```bash
+sudo mount -t efs fs-xxxxxxxx:/ /efs
+```
+
+Initially, the mount operation repeatedly failed with timeout errors:
+
+```
+Mount attempt 1/3 failed due to timeout after 15 sec.
+Mount attempt 2/3 failed due to timeout after 15 sec.
+```
+
+To identify the cause, several configurations were verified:
+
+* Confirmed that the Amazon EFS utilities were installed.
+* Verified that the EFS mount targets were in the **Available** state.
+* Checked that the EC2 instance and EFS were in the same AWS Region and VPC.
+* Verified that the EC2 security group allowed NFS (TCP Port 2049) traffic.
+* Reviewed the EFS mount target security group configuration.
+
+The issue was found to be a security group mismatch. The EFS mount target security group allowed traffic from a different security group than the one attached to the EC2 instance.
+
+The EFS security group inbound rule was updated to allow NFS (TCP Port 2049) traffic from the EC2 instance security group. After updating the source security group, the EFS file system mounted successfully.
+
+This troubleshooting process provided practical experience in AWS networking, EFS mount targets, and security group configuration.
